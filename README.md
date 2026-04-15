@@ -26,9 +26,8 @@ I'm going to use HDMI-A-1 for my virtual display leaving me with 3 display port 
 git clone https://github.com/Bloodhundur/steamdeckedid
 ```
 
-3. Make a folder and put the firmware in the folder.
+3. Put the firmware in the folder.
 ```bash
-sudo mkdir -p /usr/local/lib/firmware
 cd steamdeckedid
 sudo cp steamdeckedid /usr/lib/firmware/
 ```
