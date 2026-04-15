@@ -75,10 +75,6 @@ The command for disabling any physical connector on the video card is:
 /usr/bin/kscreen-doctor output.<display connector>.disable
 ```
 
-Adding `&&` between the commands runs the commands in sequence. So in human readable language the command says something like: DO - Turn off display port 1, and turn off display port 2, and turn on HDMI-A-1. 
-
-Then the opposite command is run when the stream ends: UNDO - Turn on display port 1, and turn on display port 2, and turn off HDMI-A-1. 
-
 You'll need to construct your own do and undo commands. The ones below are examples of how my machine is setup. You can use `kscreen-doctor` to get the names of your display outputs. Run the command `kscreen-doctor -o | grep Output:`
 
 ```bash
@@ -97,6 +93,8 @@ Disables screens DP-1 and DP-2, and enables HDMI-A-1 where the virtual displays 
 ```
 /usr/bin/kscreen-doctor output.DP-1.disable && /usr/bin/kscreen-doctor output.DP-2.disable && /usr/bin/kscreen-doctor output.HDMI-A-1.enable
 ```
+
+Adding `&&` between the commands runs the commands in sequence. So in human readable language the command says something like: DO - Turn off display port 1, and turn off display port 2, and turn on HDMI-A-1. 
 ## Undo Command
 
 Re-enables DP-1 & DP-2 and Disables HDMI-A-1 (The virtual display.)
@@ -104,6 +102,8 @@ Re-enables DP-1 & DP-2 and Disables HDMI-A-1 (The virtual display.)
 ```
 /usr/bin/kscreen-doctor output.DP-1.enable && /usr/bin/kscreen-doctor output.DP-2.enable && /usr/bin/kscreen-doctor output.HDMI-A-1.disable
 ```
+
+Then the opposite command is run when the stream ends: UNDO - Turn on display port 1, and turn on display port 2, and turn off HDMI-A-1. 
 
 # Resources and links used to create this document:
 https://gist.github.com/iamthenuggetman/6d0884954653940596d463a48b2f459c
