@@ -89,12 +89,13 @@ Output: 3 DP-2 1e298e0e-3784-46af-ab11-68b477380276
 ## Do Command
 
 Disables screens DP-1 and DP-2, and enables HDMI-A-1 where the virtual displays is tethered to the hardware HDMI port on my graphics card. 
-`/usr/bin/kscreen-doctor output.DP-1.disable && /usr/bin/kscreen-doctor output.DP-2.disable && /usr/bin/kscreen-doctor output.HDMI-A-1.enable`
+
+```/usr/bin/kscreen-doctor output.DP-1.disable && /usr/bin/kscreen-doctor output.DP-2.disable && /usr/bin/kscreen-doctor output.HDMI-A-1.enable```
 ## Undo Command
 
 Re-enables DP-1 & DP-2 and Disables HDMI-A-1 (The virtual display.)
-`/usr/bin/kscreen-doctor output.DP-1.enable && /usr/bin/kscreen-doctor output.DP-2.enable && /usr/bin/kscreen-doctor output.HDMI-A-1.disable`
 
+```/usr/bin/kscreen-doctor output.DP-1.enable && /usr/bin/kscreen-doctor output.DP-2.enable && /usr/bin/kscreen-doctor output.HDMI-A-1.disable```
 
 # Resources and links used to create this document:
 https://gist.github.com/iamthenuggetman/6d0884954653940596d463a48b2f459c
