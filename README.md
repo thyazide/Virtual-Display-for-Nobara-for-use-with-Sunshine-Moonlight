@@ -1,6 +1,6 @@
 # Virtual Display for Nobara, for use with Sunshine/Moonlight
 
-We are going to use a hardware display out on the graphics card to create a virtual display. That means that we will be sacrificing the ability to plug a physical monitor into that slot in order to use it as a virtual display out for sunshine. Removing the `GRUB_CMDLINE_LINUX` changes we will install later from the `/etc/default/grub` file will remove the virtual display and allow physical hardware to be used in that port on the physical card. 
+We are going to use a hardware display out on the graphics card to create a virtual display. That means that we will be sacrificing the ability to plug a physical monitor into that slot in order to use it as a virtual display out for sunshine. Removing the `GRUB_CMDLINE_LINUX` changes we will install later from the `/etc/default/grub` file will remove the virtual display and allow physical hardware to be used in that port on the card. 
 
 1. Find the name of a physical connector on your card you wish to use for the virtual display: 
 
