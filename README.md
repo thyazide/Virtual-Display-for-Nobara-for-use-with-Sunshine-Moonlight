@@ -103,7 +103,7 @@ Re-enables DP-1 & DP-2 and Disables HDMI-A-1 (The virtual display.)
 /usr/bin/kscreen-doctor output.DP-1.enable && /usr/bin/kscreen-doctor output.DP-2.enable && /usr/bin/kscreen-doctor output.HDMI-A-1.disable
 ```
 
-Then the opposite command is run when the stream ends: UNDO - Turn on display port 1, and turn on display port 2, and turn off HDMI-A-1. 
+This is the opposite command, its run when the stream ends: UNDO - Turn on display port 1, and turn on display port 2, and turn off HDMI-A-1. 
 
 # Resources and links used to create this document:
 https://gist.github.com/iamthenuggetman/6d0884954653940596d463a48b2f459c
