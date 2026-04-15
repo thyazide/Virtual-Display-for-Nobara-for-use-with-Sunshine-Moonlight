@@ -52,7 +52,7 @@ Exit out of nano and save changes `CTRL+X > Y > Enter`.
 sudo grub2-mkconfig -o /etc/grub2-efi.cfg && sudo grub2-mkconfig -o /etc/grub2.cfg
 ```
 
-Now reboot, you should see the new display in `Settings > Display & Monitor > Display Configuration` in KDE. 
+Now reboot, you should see the new display in `Settings > Display & Monitor > Display Configuration` in KDE. You can change the resolution and refresh rate and apply those changes even if the display is disabled. If you make changes in game, the virtual display should adjust to them properly and not produce black bars on your moonlight connected devices. 
 
 Now we need to setup sunshine to disable your physical monitors and enable the virtual monitor, and vice versa when you end the stream. 
 # Setup Sunshine for virtual display output. 
