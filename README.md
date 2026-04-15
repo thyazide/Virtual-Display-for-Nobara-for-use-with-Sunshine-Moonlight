@@ -84,6 +84,8 @@ Output: 2 HDMI-A-1 26a1cf34-1dc6-4e0d-aff0-6e939f9c6f15
 Output: 3 DP-2 1e298e0e-3784-46af-ab11-68b477380276
 ```
 
+
+# These are my example do and undo commands: 
 ## Do Command
 
 Disables screens DP-1 and DP-2, and enables HDMI-A-1 where the virtual displays is tethered to the hardware HDMI port on my graphics card. 
