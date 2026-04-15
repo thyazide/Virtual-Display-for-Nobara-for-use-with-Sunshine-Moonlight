@@ -66,12 +66,16 @@ kscreen-doctor is a command-line tool for manipulating display settings on KDE P
 ```
 
 The command for enabling any physical connector on the video card is:
-`/usr/bin/kscreen-doctor output.<display connector>.enable` 
+```
+/usr/bin/kscreen-doctor output.<display connector>.enable
+``` 
 
 The command for disabling any physical connector on the video card is:
-`/usr/bin/kscreen-doctor output.<display connector>.disable`
+```
+/usr/bin/kscreen-doctor output.<display connector>.disable
+```
 
-The `&&` between the commands runs the commands in sequence. So in human readable language the command says something like: DO - Turn off display port 1, and turn off display port 2, and turn on HDMI-A-1. 
+Adding `&&` between the commands runs the commands in sequence. So in human readable language the command says something like: DO - Turn off display port 1, and turn off display port 2, and turn on HDMI-A-1. 
 
 Then the opposite command is run when the stream ends: UNDO - Turn on display port 1, and turn on display port 2, and turn off HDMI-A-1. 
 
