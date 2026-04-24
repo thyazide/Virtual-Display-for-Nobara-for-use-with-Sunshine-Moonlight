@@ -37,12 +37,12 @@ sudo cp steamdeckedid /usr/lib/firmware/
 sudo nano /etc/default/grub
 ```
 
-Find the line `GRUB_CMDLINE_LINUX=` and add `firmware_class.path=/usr/local/lib/firmware drm.edid_firmware=HDMI-A-1:steamdeckedid video=HDMI-A-1:e` between the quotation marks. If there are other commands between the quotation marks simply add a space after the last command then paste the line in and make sure a quotation mark caps off the end of the command.  
+Find the line `GRUB_CMDLINE_LINUX=` and add `firmware_class.path=/usr/lib/firmware drm.edid_firmware=HDMI-A-1:steamdeckedid video=HDMI-A-1:e` between the quotation marks. If there are other commands between the quotation marks simply add a space after the last command then paste the line in and make sure a quotation mark caps off the end of the command.  
 
 *Example:
 
 ```bash
-GRUB_CMDLINE_LINUX="firmware_class.path=/usr/local/lib/firmware drm.edid_firmware=HDMI-A-1:steamdeckedid.bin video=HDMI-A-1:e"
+GRUB_CMDLINE_LINUX="firmware_class.path=/usr/lib/firmware drm.edid_firmware=HDMI-A-1:steamdeckedid video=HDMI-A-1:e"
 ```
 
 Exit out of nano and save changes `CTRL+X > Y > Enter`.
